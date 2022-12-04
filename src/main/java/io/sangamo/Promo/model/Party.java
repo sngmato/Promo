@@ -9,11 +9,10 @@ import org.springframework.data.annotation.Id;
 import java.math.BigInteger;
 
 @Entity
-public class Party {
+public class Party extends GenericEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private BigInteger id;
     private String name;
     private PartyType partyType;
-
 }

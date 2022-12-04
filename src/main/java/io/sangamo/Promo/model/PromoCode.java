@@ -9,7 +9,7 @@ import org.springframework.data.annotation.Id;
 import java.math.BigInteger;
 
 @Entity
-public class PromoCode {
+public class PromoCode extends GenericEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
